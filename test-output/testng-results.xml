@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="65042" started-at="2018-03-17T09:11:18Z" finished-at="2018-03-17T09:12:23Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="TestRunner.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.sample.data_republic.sample_ebay.TestRunner@69ea3742]" name="feature" class="com.sample.data_republic.sample_ebay.TestRunner"/>
+        <method signature="TestRunner.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.sample.data_republic.sample_ebay.TestRunner@20398b7c]" name="feature" class="com.sample.data_republic.sample_ebay.TestRunner"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="FirefoxTest" duration-ms="33818" started-at="2018-03-17T09:11:18Z" finished-at="2018-03-17T09:11:52Z">
+      <class name="com.sample.data_republic.sample_ebay.TestRunner">
+        <test-method status="PASS" signature="setUpClass(java.lang.String)[pri:0, instance:com.sample.data_republic.sample_ebay.TestRunner@69ea3742]" name="setUpClass" is-config="true" duration-ms="235" started-at="2018-03-17T09:11:18Z" finished-at="2018-03-17T09:11:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.sample.data_republic.sample_ebay.TestRunner@69ea3742]" name="feature" duration-ms="33453" started-at="2018-03-17T09:11:18Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-03-17T09:11:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Search Products]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.sample.data_republic.sample_ebay.TestRunner@69ea3742]" name="tearDownClass" is-config="true" duration-ms="11" started-at="2018-03-17T09:11:52Z" finished-at="2018-03-17T09:11:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.sample.data_republic.sample_ebay.TestRunner -->
+    </test> <!-- FirefoxTest -->
+    <test name="ChromeTest" duration-ms="31196" started-at="2018-03-17T09:11:52Z" finished-at="2018-03-17T09:12:23Z">
+      <class name="com.sample.data_republic.sample_ebay.TestRunner">
+        <test-method status="PASS" signature="setUpClass(java.lang.String)[pri:0, instance:com.sample.data_republic.sample_ebay.TestRunner@20398b7c]" name="setUpClass" is-config="true" duration-ms="32" started-at="2018-03-17T09:11:52Z" finished-at="2018-03-17T09:11:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.sample.data_republic.sample_ebay.TestRunner@20398b7c]" name="feature" duration-ms="31156" started-at="2018-03-17T09:11:52Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-03-17T09:12:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Search Products]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.sample.data_republic.sample_ebay.TestRunner@20398b7c]" name="tearDownClass" is-config="true" duration-ms="1" started-at="2018-03-17T09:12:23Z" finished-at="2018-03-17T09:12:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.sample.data_republic.sample_ebay.TestRunner -->
+    </test> <!-- ChromeTest -->
+  </suite> <!-- Suite -->
+</testng-results>
