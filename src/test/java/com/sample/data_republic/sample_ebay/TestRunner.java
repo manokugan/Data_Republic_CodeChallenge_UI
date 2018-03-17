@@ -1,6 +1,5 @@
 package com.sample.data_republic.sample_ebay;
 
-
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
@@ -15,12 +14,13 @@ import cucumber.api.testng.TestNGCucumberRunner;
 public class TestRunner {
 
 	private TestNGCucumberRunner testNGCucumberRunner;
-static String browserOri;
+	static String browserOri;
+
 	@Parameters("browser")
 	@BeforeClass(alwaysRun = true)
 	public void setUpClass(String browser) throws Exception {
 		testNGCucumberRunner = new TestNGCucumberRunner(this.getClass());
-		browserOri=browser;
+		browserOri = browser;
 
 	}
 

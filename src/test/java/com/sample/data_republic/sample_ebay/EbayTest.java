@@ -1,6 +1,5 @@
 package com.sample.data_republic.sample_ebay;
 
-import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
@@ -22,6 +21,10 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 
 import com.sample.data_republic.helper.ScreenshotHelper;
 
+/**
+ * @author manokugan
+ *
+ */
 public class EbayTest extends EbayPageObjects {
 
 	public RemoteWebDriver driver;
@@ -31,7 +34,7 @@ public class EbayTest extends EbayPageObjects {
 	public void loadBrowser() throws MalformedURLException {
 		String browser = TestRunner.browserOri;
 
-		String Node = "http://192.168.0.5:4444/wd/hub";
+		String Node = propertyObj.getProperty("node");
 		if (browser.equalsIgnoreCase("chrome")) {
 			System.setProperty("webdriver.chrome.driver", "src/test/resources/drivers/chromedriver");
 			DesiredCapabilities cap = DesiredCapabilities.chrome();
@@ -40,17 +43,6 @@ public class EbayTest extends EbayPageObjects {
 			DesiredCapabilities cap = DesiredCapabilities.firefox();
 			driver = new RemoteWebDriver(new URL(Node), cap);
 		}
-		// If the browser is Firefox, then do this
-		/*
-		 * if (browser.equalsIgnoreCase("firefox")) {
-		 * System.setProperty("webdriver.gecko.driver",
-		 * "src/test/resources/drivers/geckodriver"); driver = new
-		 * FirefoxDriver(); } else if (browser.equalsIgnoreCase("chrome")) {
-		 * System.setProperty("webdriver.chrome.driver",
-		 * "src/test/resources/drivers/chromedriver"); driver = new
-		 * ChromeDriver(); }
-		 */
-
 		propertyObj = readPropertyFile();
 		driver.get(propertyObj.getProperty("url"));
 	}
