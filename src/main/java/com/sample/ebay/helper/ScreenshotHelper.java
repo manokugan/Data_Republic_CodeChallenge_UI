@@ -1,4 +1,4 @@
-package com.sample.data_republic.helper;
+package com.sample.ebay.helper;
 
 
 	import java.io.File;

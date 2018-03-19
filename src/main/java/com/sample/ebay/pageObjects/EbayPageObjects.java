@@ -1,4 +1,4 @@
-package com.sample.data_republic.sample_ebay;
+package com.sample.ebay.pageObjects;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

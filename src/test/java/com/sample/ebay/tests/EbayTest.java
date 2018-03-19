@@ -1,4 +1,4 @@
-package com.sample.data_republic.sample_ebay;
+package com.sample.ebay.tests;
 
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
@@ -19,7 +19,8 @@ import org.junit.Assert;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
-import com.sample.data_republic.helper.ScreenshotHelper;
+import com.sample.ebay.helper.ScreenshotHelper;
+import com.sample.ebay.pageObjects.EbayPageObjects;
 
 /**
  * @author manokugan

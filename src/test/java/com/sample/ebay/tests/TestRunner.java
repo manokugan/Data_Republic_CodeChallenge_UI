@@ -1,4 +1,4 @@
-package com.sample.data_republic.sample_ebay;
+package com.sample.ebay.tests;
 
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
