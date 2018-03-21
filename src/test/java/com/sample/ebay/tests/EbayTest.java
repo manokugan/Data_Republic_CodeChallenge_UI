@@ -34,7 +34,7 @@ public class EbayTest extends EbayPageObjects {
 	@Before
 	public void loadBrowser() throws MalformedURLException {
 		String browser = TestRunner.browserOri;
-
+		propertyObj = readPropertyFile();
 		String Node = propertyObj.getProperty("node");
 		if (browser.equalsIgnoreCase("chrome")) {
 			System.setProperty("webdriver.chrome.driver", "src/test/resources/drivers/chromedriver");
@@ -44,7 +44,7 @@ public class EbayTest extends EbayPageObjects {
 			DesiredCapabilities cap = DesiredCapabilities.firefox();
 			driver = new RemoteWebDriver(new URL(Node), cap);
 		}
-		propertyObj = readPropertyFile();
+		
 		driver.get(propertyObj.getProperty("url"));
 	}
 
